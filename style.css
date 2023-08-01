@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'El Messiri', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: #222;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header .nav i {
+    margin: 0px 10px;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(1 1 1);
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header .nav i:nth-child(1):hover{
+    transform: rotate(360deg);
+}
+
+.continer {
+    padding: 100px 50px;
+}
+
+.continer .header-continer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.continer .header-continer h1 {
+    font-size: 40px;
+}
+
+.continer .header-continer .ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.continer .header-continer .ul button {
+    margin: 0px 10px;
+    box-shadow: 0px 5px 20px rgba(1 1 1/50%);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+
+.level-1 {
+    color: #74C69D;
+}
+
+.level-2 {
+    color: #FFD60A;
+
+}
+
+.level-3 {
+    color: #D00000;
+}
+
+
+.ul button:nth-child(1):hover {
+    color: #fff;
+    background: #74C69D;
+}
+
+.level-2:hover {
+    color: #fff;
+    background: #FFD60A;
+}
+
+.level-3:hover {
+    color: #fff;
+    background: #D00000;
+}
+
+.card-project {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card-project .card {
+    margin: 20px 10px ;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
+    padding: 60px;
+    cursor: pointer;
+    transition: 0.5s;   
+    border-radius: 20px;
+
+}
+
+.card-project .card:hover {
+    transform: scale(1.1);
+}
+
+.card .card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card .card-info .level-card span{
+    color: #74C69D;
+}
+
+.card .count{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width: 570px){
+    .header-continer{
+        flex-direction: column;
+    }
+
+    .header-continer h1 {
+        margin-bottom: 10px;
+    } 
+}
+
+@media (max-width: 488px){
+
+    .title{
+        width: 100%;
+    }
+    .title > h1 {
+        text-align: center;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .card {
+        padding: 30px;
+    }
+    .card .card-info {
+        flex-direction: column;
+    }
+}
