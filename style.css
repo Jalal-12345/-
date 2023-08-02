@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'El Messiri',  cursive;
 }
 
 header {
@@ -32,6 +32,64 @@ header .nav i {
 
 header .nav i:nth-child(1):hover{
     transform: rotate(360deg);
+}
+
+/* modal */
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0 ,0, 0, 0.4);
+}
+
+.modal .modal-content{
+    position: relative;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+    -webkit-animation: animatetop 0.5s ease-in-out;
+    animation: animatetop 0.5s ease-in-out;
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+.close{
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal .modal-content input {
+    text-align: right;
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
 }
 
 .continer {
