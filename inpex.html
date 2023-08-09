@@ -16,10 +16,87 @@
 
     <div class="nav">
       <i class="fa-solid fa-magnifying-glass" id="serch"></i>
-      <i class="fa-sharp fa-solid fa-user"></i>
+      <i class="fa-sharp fa-solid fa-user" id="user"></i>
     </div>
   </header>
 
+  <div class="select">
+    <div class="option" style="cursor: text;">جلال</div>
+    <div class="option" id="register">إنشاء حساب</div>
+    <div class="option" id="login">تسجيل الدخول</div>
+    <div class="option">ملف الشخصي</div>
+    <div class="option" style="color: #D00000;">تسجيل الخروج</div>
+  </div> 
+
+       <!-- register  -->
+  <div class="modal-register" style="display: block;">
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+        <h1 class="title-register">إنشاب حساب جديد</h1>
+
+ 
+      <div class="username">
+        <div class="grop-input">
+          <i class="fa-sharp fa-solid fa-user"></i>
+          <input type="text" placeholder="اسم المستخدم">
+        </div>
+          <label>اسم المستخدم</label>
+        </div>
+        <div class="password">
+          <div class="grop-input">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="كلمة المرور">
+        </div>
+        <label>كلمة المرور</label>
+        </div>
+          
+        <div class="phone">
+          <div class="grop-input">
+          <i class="fa-solid fa-phone"></i>
+          <input type="text" placeholder= "رقم الجوال">
+        </div>
+          <label>رقم الجوال</label>
+
+        </div>
+          
+        <button>تسجيل الدخول</button>
+        </div>
+
+       
+    </div>
+
+    <!-- login -->
+
+    <div class="modal-login" style="display: block;">
+      <div class="modal-content">
+  
+          <span class="close">&times;</span>
+          <h1 class="title-login">تسجيل الدخول</h1>
+  
+   
+        <div class="username">
+          <div class="grop-input">
+            <i class="fa-sharp fa-solid fa-user"></i>
+            <input type="text" placeholder="اسم المستخدم">
+          </div>
+            <label>اسم المستخدم</label>
+          </div>
+          <div class="password">
+            <div class="grop-input">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="كلمة المرور">
+          </div>
+          <label>كلمة المرور</label>
+          </div>
+    
+          <button>تسجيل الدخول</button>
+          </div>
+  
+         
+      </div>
+
+ <!-- modal -->
   <div class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
